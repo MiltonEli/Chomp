@@ -7,7 +7,7 @@ public class BoardPrint {
     //x x x
     //x x x
 
-    int counter = 1;
+
 
 
 
@@ -25,6 +25,8 @@ public class BoardPrint {
     //All Possible Boards
 
     public BoardPrint() {
+
+        int counter = 1;
 
         for (int a = 3; a > 0; a--) {
             for (int b = a; b > -1; b--) {
