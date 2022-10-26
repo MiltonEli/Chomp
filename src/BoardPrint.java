@@ -6,10 +6,9 @@ public class BoardPrint {
     //x
     //x x x
     //x x x
-    static int a;
-    static int b;
+
     int counter = 1;
-    static int c = 3;
+
 
 
 
@@ -44,7 +43,7 @@ public class BoardPrint {
     public void PosRes3() {
         int x = 3;
         int y = 3;
-        int z = 3;
+        int z ;
 
         int counterY= 2;
         int counterX =2;
@@ -70,7 +69,7 @@ public class BoardPrint {
         counterY=2;
 
         for (int x2 = 2; x2 > 0; x2--) {
-            z = y = x2;
+            x2= z = y ;
             System.out.println(x2 + " " + y + " " + z+" ("+counterX+ ","+counterY+")");
 
             counterY--;
