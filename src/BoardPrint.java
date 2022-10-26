@@ -23,6 +23,8 @@ public class BoardPrint {
 
     }
 
+    //All Possible Boards
+
     public BoardPrint() {
 
         for (int a = 3; a > 0; a--) {
@@ -38,6 +40,7 @@ public class BoardPrint {
         }
     }
 
+    //Possible Resulting Boards from a full 3x3 position and each coordinating click
     public void PosRes3() {
         int x = 3;
         int y = 3;
