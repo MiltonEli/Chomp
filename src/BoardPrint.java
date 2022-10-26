@@ -71,7 +71,7 @@ public class BoardPrint {
         counterY=2;
 
         for (int x2 = 2; x2 > 0; x2--) {
-            x2= z = y ;
+            z = y = x2 ;
             System.out.println(x2 + " " + y + " " + z+" ("+counterX+ ","+counterY+")");
 
             counterY--;
