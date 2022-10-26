@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class BoardPrint {
 
     //for hw print all lines of code
@@ -10,38 +8,79 @@ public class BoardPrint {
     //x x x
     static int a;
     static int b;
-    int counter=1;
-    static int c=3;
-    
+    int counter = 1;
+    static int c = 3;
+
+
+
+
 
     public static void main(String[] args) {
 //        System.out.println("abc represents columns. possible combinations for abc in a 3x3 are: 333,332,331,330,322,321,320,311,310,300,222,221,220,211,210,200,111,110,100,000");
-        BoardPrint p=new BoardPrint();
-
+        BoardPrint p = new BoardPrint();
+        p.PosRes3();
 
 
     }
-    public BoardPrint(){
-        Scanner input= new Scanner(System.in);
 
-        for(int a=3;a>0;a--){
-            for(int b=a;b>-1;b--){
-                for(int c=b;c>-1;c--){
+    public BoardPrint() {
 
-                        System.out.println("board "+counter+" is: "+a+" "+b+" "+c);
-                        counter++;
+        for (int a = 3; a > 0; a--) {
+            for (int b = a; b > -1; b--) {
+                for (int c = b; c > -1; c--) {
+
+
+                    System.out.println("board " + counter + " is: " + a + " " + b + " " + c);
+                    counter++;
                 }
 
             }
         }
     }
 
-    public void threeByThree(){
+    public void PosRes3() {
+        int x = 3;
+        int y = 3;
+        int z = 3;
 
+        int counterY= 2;
+        int counterX =2;
 
+        for (int z2 = 2; z2 > -1; z2--) {
+
+            System.out.println(x + " " + y + " " + z2+" ("+counterX+ ","+counterY+")");
+            counterY--;
+
+        }
+
+        counterX--;
+        counterY=2;
+
+        for (int y2 = 2; y2 > -1; y2--) {
+            z = y2;
+            System.out.println(x + " " + y2 + " " + z+" ("+counterX+ ","+counterY+")");
+            counterY--;
+
+        }
+
+        counterX--;
+        counterY=2;
+
+        for (int x2 = 2; x2 > 0; x2--) {
+            z = y = x2;
+            System.out.println(x2 + " " + y + " " + z+" ("+counterX+ ","+counterY+")");
+
+            counterY--;
+        }
     }
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
