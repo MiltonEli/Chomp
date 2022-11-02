@@ -18,6 +18,7 @@ public class BoardPrint {
 //        System.out.println("abc represents columns. possible combinations for abc in a 3x3 are: 333,332,331,330,322,321,320,311,310,300,222,221,220,211,210,200,111,110,100,000");
         BoardPrint p = new BoardPrint();
         p.PosRes3();
+        p.BadBoard();
 
 
     }
@@ -33,7 +34,7 @@ public class BoardPrint {
                 for (int c = b; c > -1; c--) {
 
 
-                    System.out.println("board " + counter + " is: " + a + " " + b + " " + c);
+                    //System.out.println("board " + counter + " is: " + a + " " + b + " " + c);
                     counter++;
                 }
 
@@ -75,6 +76,25 @@ public class BoardPrint {
             System.out.println(x2 + " " + y + " " + z+" ("+counterX+ ","+counterY+")");
 
             counterY--;
+        }
+    }
+    public void BadBoard(){
+        int d=3;
+        int e=1;
+        int f=1;
+        boolean canWin =true;
+        
+        
+        if (d==e+f+1){
+            canWin=false;
+
+        } else if (d==e &&e==f+1) {
+            canWin=false;
+        }else{
+             canWin=true;
+        }
+        if(canWin){
+
         }
     }
 }
