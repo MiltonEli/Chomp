@@ -21,6 +21,7 @@ public class BoardPrint {
         p.BadBoard();
 
 
+
     }
 
     //All Possible Boards
@@ -34,7 +35,7 @@ public class BoardPrint {
                 for (int c = b; c > -1; c--) {
 
 
-                    //System.out.println("board " + counter + " is: " + a + " " + b + " " + c);
+                    System.out.println("board " + counter + " is: " + a + " " + b + " " + c);
                     counter++;
                 }
 
@@ -79,23 +80,10 @@ public class BoardPrint {
         }
     }
     public void BadBoard(){
-        int d=3;
-        int e=1;
-        int f=1;
-        boolean canWin =true;
-        
-        
-        if (d==e+f+1){
-            canWin=false;
 
-        } else if (d==e &&e==f+1) {
-            canWin=false;
-        }else{
-             canWin=true;
-        }
-        if(canWin){
 
-        }
+
+
     }
 }
 
